@@ -84,46 +84,31 @@ body {
   color: gold;
 }
 #main {
-  background-color: #cccccc;
+  background-color: #fff;
+}
+#main .search-shang {
+  padding: .15rem;
+}
+#main .search-shang form {
   display: flex;
 }
-#main .aaa-left {
-  position: relative;
-  width: .8rem;
-  background-color: #ffffff;
+#main .search-shang form button {
+  width: .6rem;
 }
-#main .aaa-left .mui-scroll {
-  min-height: 101%;
-}
-#main .aaa-left ul li {
-  display: block;
-  height: .45rem;
-  text-align: center;
-  line-height: .45rem;
-}
-#main .aaa-left ul li.active {
-  background-color: #cccccc;
-}
-#main .aaa-right {
+#main .search-shang form input {
   flex: 1;
-  position: relative;
-  height: 101%;
-}
-#main .aaa-right .mui-scroll {
-  min-height: 101%;
-}
-#main .aaa-right .mui-row {
-  padding: .1rem;
-}
-#main .aaa-right .mui-row .mui-col-xs-4 a {
-  background-color: #ffffff;
-  display: block;
-  text-align: center;
-  margin-bottom: .1rem;
-}
-#main .aaa-right .mui-row .mui-col-xs-4 a img {
-  width: 100%;
-}
-#main .aaa-right .mui-row .mui-col-xs-4 a p {
   margin-bottom: 0;
+  font-size: .15rem;
+  text-align: left;
+}
+#main .search-xia .mui-card .mui-card-header span {
+  font-size: .16rem;
+}
+#main .search-xia .mui-card .mui-card-content ul li span {
+  width: .3rem;
+  height: .3rem;
+  font-size: .19rem;
+  text-align: center;
+  padding: .06rem;
+  background-color: #ccc;
 }

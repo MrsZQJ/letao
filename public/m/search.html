@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/search.less">
+    <script src="./lib/less/less.js"></script>
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="left fa fa-arrow-left"></a>
+        <h3 class="center">搜索中心</h3>
+        <a href="./search.html" class="fa fa-search right"></a>
+    </header>
+    <main id="main">
+        <section class="search-shang">
+            <form action="#">
+                <input type="search" class="mui-input-clear" placeholder="你想搜索什么,就能得到什么">
+                <button type="button" class="mui-btn mui-btn-primary">搜索</button>
+            </form>
+        </section>
+        <section class="search-xia">
+            <div class="mui-card">
+                <!--页眉，放置标题-->
+                <div class="mui-card-header">
+                    <span>搜索历史</span>
+                    <a href="#" class="fa fa-trash-o">清空记录</a>
+                </div>
+                <div class="mui-card-content">
+                    <ul>
+                        <li class="mui-table-view-cell">
+                            冷漠现代人的标配
+                            <span class="mui-badge mui-badge-purple fa fa-times"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <a href="#">
+            <i class="fa fa-home"></i>
+            <span>首页</span>
+        </a>
+        <a href="./category.html" class="active">
+            <i class="fa fa-bars"></i>
+            <span>分类</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-shopping-cart"></i>
+            <span>购物车</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-user"></i>
+            <span>个人中心</span>
+        </a>
+    </footer>
+    <script id="tpi" type="text/html">
+        {{if list.length>0}}
+            {{each list}}
+                <li class="mui-table-view-cell" data-ccc="{{$index}}">
+                    {{$value}}
+                    <span class="mui-badge mui-badge-purple fa fa-times"></span>
+                </li>
+            {{/each}}
+        {{else}}
+            <li class="mui-table-view-cell">没有历史记录</li>
+        {{/if}}
+    </script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/search.js"></script>
+</body>
+
+</html>
