@@ -86,21 +86,6 @@ body {
 #main {
   background-color: #fff;
 }
-#main .search-shang {
-  padding: .15rem;
-}
-#main .search-shang form {
-  display: flex;
-}
-#main .search-shang form button {
-  width: .6rem;
-}
-#main .search-shang form input {
-  flex: 1;
-  margin-bottom: 0;
-  font-size: .15rem;
-  text-align: left;
-}
 #main .search-xia .mui-card .mui-card-header span {
   font-size: .16rem;
 }

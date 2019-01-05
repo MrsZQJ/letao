@@ -64,6 +64,7 @@ body {
 }
 #main .search-shang {
   padding: .15rem;
+  position: absolute;
 }
 #main .search-shang form {
   display: flex;
@@ -97,4 +98,56 @@ body {
 }
 #footer a.active {
   color: gold;
+}
+body {
+  background-color: #fff;
+}
+#main .yemian {
+  padding-top: .55rem;
+  position: relative;
+  height: 100%;
+}
+#main .yemian .mui-card {
+  margin: 0;
+  box-shadow: none;
+}
+#main .yemian .mui-card .mui-card-header {
+  background-color: #ccc;
+}
+#main .yemian .mui-card .mui-card-header a {
+  font-size: .14rem;
+  color: gray;
+}
+#main .yemian .mui-card .mui-card-header a.active {
+  color: red;
+}
+#main .yemian .mui-card .mui-card-header a i {
+  font-size: .14rem;
+}
+#main .yemian .mui-card .mui-card-content {
+  padding: .1rem;
+}
+#main .yemian .mui-card .mui-card-content .mui-row .mui-col-xs-6:nth-child(odd) {
+  padding-right: .06rem;
+}
+#main .yemian .mui-card .mui-card-content .mui-row .mui-col-xs-6:nth-child(even) {
+  padding-left: .06rem;
+}
+#main .yemian .mui-card .mui-card-content .mui-row .mui-col-xs-6 a {
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 2px gray;
+}
+#main .yemian .mui-card .mui-card-content .mui-row .mui-col-xs-6 a img {
+  width: 100%;
+}
+#main .yemian .mui-card .mui-card-content .mui-row .mui-col-xs-6 a button {
+  margin-bottom: .15rem;
+}
+#main .yemian .mui-card .mui-card-content .mui-row .mui-col-xs-6 a p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: .16rem;
 }

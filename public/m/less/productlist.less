@@ -1,0 +1,60 @@
+@import './base.less';
+body{
+    background-color: #fff;
+}
+#main {
+    
+    .yemian {
+        padding-top: .55rem;
+        position: relative;
+        height: 100%;
+        .mui-card {
+            margin: 0;
+            box-shadow: none;
+            .mui-card-header {
+                background-color: #ccc;
+                a {
+                    &.active{
+                        color: red;
+                    }
+                    font-size: .14rem;
+                    color: gray;
+                    i {
+                        font-size: .14rem;
+                    }
+                }
+            }
+            .mui-card-content {
+                padding: .1rem;
+                .mui-row {
+                    .mui-col-xs-6 {
+                        &:nth-child(odd) {
+                            padding-right: .06rem;
+                        }
+                        &:nth-child(even) {
+                            padding-left: .06rem;
+                        }
+                        a {
+                            display: block;
+                            text-align: center;
+                            box-shadow: 0 0 2px gray;
+                            img {
+                                width: 100%;
+                            }
+                            button {
+                                margin-bottom: .15rem;
+                            }
+                            p {
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                                overflow: hidden;
+                                line-height: .16rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

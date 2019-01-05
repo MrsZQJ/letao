@@ -9,7 +9,7 @@ $(function () {
             return false;
         }
         var arr = localStorage.getItem('jiang');
-        arr = JSON.parse(arr) || [];
+        arr = JSON.parse(arr || []);
         if (arr.indexOf(search) != -1) {
             arr.splice(arr.indexOf(search), 1);
         }
@@ -19,12 +19,13 @@ $(function () {
         localStorage.setItem('jiang', arr);
         $('.search-shang form input').val("");
         shen();
+        location="productlist.html?key="+search+"&timer="+new Date().getTime();
     })
 
     shen();
     function shen() {
         var arr = localStorage.getItem('jiang');
-        arr = JSON.parse(arr) || [];
+        arr = JSON.parse(arr || []);
         var html = template('tpi', {
             list: arr
         });
@@ -32,7 +33,7 @@ $(function () {
     }
 
     $('.mui-card-header a').on('tap',function(){
-        localStorage.clear('jiang');
+        localStorage.removeItem('jiang');
         shen();
     })
 
