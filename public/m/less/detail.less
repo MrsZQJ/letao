@@ -1,0 +1,61 @@
+@import 'base.less';
+#main {
+    #slide {
+        img {
+            height: 3.2rem;
+        }
+    }
+    #list {
+        .mui-table-view {
+            li {
+                &:nth-child(1) {
+                    line-height: .20rem;
+                    span {
+                        font-size: .14rem;
+                        font-weight: bold;
+                    }
+                }
+                &:nth-child(2){
+                    line-height: .2rem;
+                    span{
+                        color: red;
+                        font-weight: bold;
+                    }
+                    del{
+                        color: gray;
+                    }
+                }
+                &:nth-child(3){
+                    .chima{
+                        vertical-align: middle;
+                        margin-bottom: .05rem;
+                        button{
+                            vertical-align: middle;
+                            margin-bottom: .05rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#footerr{
+    background-color: #cccccc;
+    .mui-row{
+        height: .45rem;
+        .mui-col-xs-2{
+            
+            padding: 0 .23rem;
+            i{
+                font-size: .25rem;
+                line-height: .45rem;
+            }
+        }
+        .mui-col-xs-5{
+            padding: .06rem;
+            button{
+                width: 100%;
+            }
+        }
+    }
+}

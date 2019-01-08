@@ -67,7 +67,7 @@ $(function () {
             data: obj,
             url: "/product/queryProduct",
             success: function (zhou) {
-                console.log(zhou);
+                // console.log(zhou);
                 var html = template('abccba', zhou);
                 $('.mui-card-content .mui-row').html(html);
             }
@@ -133,4 +133,9 @@ $(function () {
             }
         }
     });
+    $('.yemian .mui-card-content .mui-row').on('tap','.btn-buy',function(){
+        var id=$(this).data('id');
+        // console.log(id);
+        location="detail.html?id="+id;
+    })
 })
